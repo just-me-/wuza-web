@@ -723,6 +723,7 @@ p, .fade-in {
 }
 .animated-logo:before {
     content: '';
+    padding: 1px 1px 0 0;
     display: block;
     position: absolute;
     border-radius: 50%;
