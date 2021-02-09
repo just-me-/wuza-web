@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { RecipeOverviewComponent } from './recipe-overview/recipe-overview.component';
 
 const routes: Routes = [
   {
-    path: 'rezepte',
-    loadChildren: () => import('./recipes/recipes.module').then(m => m.RecipesModule)
+    path: '',
+    component: RecipeOverviewComponent
   },
   {
     path: 'home',
@@ -14,7 +15,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class RecipesRoutingModule { }
