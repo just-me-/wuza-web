@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'app-recipe-overview',
+  selector: 'wuza-recipe-overview',
   templateUrl: './recipe-overview.component.html'
 })
 export class RecipeOverviewComponent implements OnInit {

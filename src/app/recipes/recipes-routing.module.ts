@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { RecipeOverviewComponent } from './recipe-overview/recipe-overview.component';
+import { NgModule } from '@angular/core'
+import { RouterModule, Routes } from '@angular/router'
+import { RecipeOverviewComponent } from './recipe-overview/recipe-overview.component'
 
 const routes: Routes = [
   {
@@ -12,7 +12,7 @@ const routes: Routes = [
     redirectTo: '',
     pathMatch: 'full'
   }
-];
+]
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
