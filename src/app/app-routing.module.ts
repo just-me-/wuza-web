@@ -1,15 +1,19 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
+import {HomeComponent} from './home/home.component'
 
 const routes: Routes = [
   {
-    path: 'rezepte',
-    loadChildren: () => import('./recipes/recipes.module').then(m => m.RecipesModule)
+    path: '', component: HomeComponent
   },
   {
     path: 'home',
     redirectTo: '',
     pathMatch: 'full'
+  },
+  {
+    path: 'rezepte',
+    loadChildren: () => import('./recipes/recipes.module').then(m => m.RecipesModule)
   }
 ]
 
