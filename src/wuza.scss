@@ -533,6 +533,8 @@ h1, h2, h3, h4 {
       -webkit-text-fill-color: #ff734a;
     }
 }
+// TODO Buggy in Angular
+/*
 h1, h2, h3, h4, .fade-in-move-down {
     -webkit-animation: fade-in-move-down 0.7s;
     animation: fade-in-move-down 0.7s;
@@ -542,6 +544,7 @@ p, .fade-in {
     -webkit-animation: fade-in 1.5s;
     animation: fade-in 1.5s;
 }
+*/
 
 .highlight {
     // 2Do... cooler :)
@@ -1529,7 +1532,7 @@ body, .navbar-dark {
     }
 
     /* slider */
-    .recip_wrapper {
+    .recipe_wrapper {
         overflow: hidden;
     }
     #main_recipe_slider {

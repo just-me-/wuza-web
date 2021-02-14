@@ -1,0 +1,20 @@
+<div *ngIf="ingredients && title" class="recipe fade-in-move-down">
+
+  <h1><span class="bubbles">{{title}}</span></h1>
+
+  <div class="recipe_wrapper">
+
+    <div class="col-md-6 no-padding-left">
+      <h2>Zutaten</h2>
+      <ul class="ingredients checkable noselect">
+        <li *ngFor="let ingredient of ingredients">{{ingredient}}</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Zubereitung</h2>
+  <ol class="steps noselect">
+    <ng-content></ng-content>
+  </ol>
+
+</div>

@@ -1,1 +1,7 @@
+<h1>Rezepte</h1>
 <p>Die Rezepte folgen bald</p>
+
+<ng-container *ngFor="let entry of entries">
+  <a [routerLink]="entry.link">{{entry.name}}</a>
+  <br/>
+</ng-container>
