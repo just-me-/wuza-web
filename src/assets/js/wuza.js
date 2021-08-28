@@ -6,7 +6,6 @@ var fancyBackgroundRendered = false;
 
 $(document).ready(function(){
     // fancy background
-    /* TODO
     VANTA.BIRDS({
       el: ".container",
       mouseControls: true,
@@ -24,7 +23,6 @@ $(document).ready(function(){
       quantity: 2.00
     })
     renderFancyBackground();
-    */
 
     // activate animated img slider
     var mySwiper = new Swiper ('.swiper-slider', {
