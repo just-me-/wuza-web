@@ -157,7 +157,7 @@ ol.steps {
         border: .5em solid transparent;
         left: -1em;
         top: 50%;
-        margin-top: -5em;
+        margin-top: -.5em;
         transition: all .3s ease-out;
 
         -webkit-animation-name: slide;
@@ -168,7 +168,7 @@ ol.steps {
     }
     li.arrow:after,
     li:hover:after {
-        left: -5em;
+        left: -3.25em;
         border-left-color: $color-touch;
     }
 }
@@ -1501,7 +1501,6 @@ body, .navbar-dark {
 /* ingredients list in recipes */
 .ingredients {
     white-space: pre-line;
-    margin-top: -25px;
     li {
         border-bottom: 1px solid rgba(red($color-touch), green($color-touch), blue($color-touch), 0.4);
         padding: 4px 0 2px 0;
