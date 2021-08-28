@@ -10,6 +10,11 @@ export class RizCasimirComponent implements OnInit {
     'Dose Fruchtsalat', 'Beliebig weitere Früchte (Bananen, Mango)', 'Evt. etwas Maisstärke'
   ]
 
+  images = [
+    {img: 'riz_casimir_main', alt: 'Riz Casimir'},
+    {img: 'riz_casimir_step1', alt: 'Früchte einkochen', title: 'Früchte hinzugeben'},
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
