@@ -54,15 +54,6 @@ $(document).ready(function(){
         prevButton: '.swiper-button-prev',
     });
 
-	// show cookie info
-	window.cookieconsent_options = {
-	  "message":"WUZA verwendet Cookies, um Deinen Besuch optimal zu gestalten. <br/>",
-	  "dismiss":"Alles klar und akzeptiert!",
-	  "learnMore":"Erfahre hier mehr dazu.",
-	  "link":"view/impressum",
-	  "theme":"css/cookieconsent.css"
-	};
-
 	// bubble effect
 	$.each($(".bubbles"), function(){
 		var bubblecount = ($(this).width()/50)*10;
@@ -92,14 +83,6 @@ $(document).ready(function(){
 
 $( window ).resize(function() {
   renderFancyBackground();
-});
-
-
-// *** G E N E R A L   B I N D S *** //
-
-// checkable unordered lists
-$('ul.checkable li').bind('click', function(){
-	$(this).toggleClass('checked');
 });
 
 
