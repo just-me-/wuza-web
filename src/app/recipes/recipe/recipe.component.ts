@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core'
+import {Component, Input, OnInit, Renderer2} from '@angular/core'
 
 @Component({
   selector: 'wuza-recipe',
@@ -12,9 +12,20 @@ export class RecipeComponent implements OnInit {
   @Input()
   title: string | undefined
 
-  constructor() { }
+  constructor(private renderer: Renderer2) { }
 
   ngOnInit(): void {
+  }
+
+  // TODO change to a directive
+  toggleClass(event: any, className: string) {
+    const hasClass = event.target.classList.contains(className)
+
+    if(hasClass) {
+      this.renderer.removeClass(event.target, className)
+    } else {
+      this.renderer.addClass(event.target, className)
+    }
   }
 
 }
