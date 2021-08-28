@@ -10,6 +10,13 @@ export class MandelkuchenComponent implements OnInit {
     '2 Eier', 'ca. 375g Blätterteig', 'Optional: Apfelmus zum Servieren'
   ]
 
+  images = [
+    {img: 'mandelkuchen_main', alt: 'Mandelkuchen'},
+    {img: 'mandelkuchen_1', alt: 'Aus dem Ofen'},
+    {img: 'mandelkuchen_2', alt: 'Mit Puderzucker'},
+    {img: 'mandelkuchen_3', alt: 'Mandelkuchen'},
+  ]
+
   constructor() { }
 
   ngOnInit(): void {

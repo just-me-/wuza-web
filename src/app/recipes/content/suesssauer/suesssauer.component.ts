@@ -11,6 +11,13 @@ export class SuesssauerComponent implements OnInit {
     '150g Zucker', '3dl Wasser'
   ]
 
+  images = [
+    {img: 'susssauer_main', alt: 'Süss-Sauer'},
+    {img: 'susssauer_step1', alt: 'Gemüse anbraten', title: 'Das Gemüse anbraten'},
+    {img: 'susssauer_step2', alt: 'Sauce anrühren', title: 'Die Sauce separat anrühren'},
+    {img: 'susssauer_step3', alt: 'Köcheln lassen', title: 'Alles gemeinsam köcheln lassen'},
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
