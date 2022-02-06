@@ -6,8 +6,9 @@ import { Component } from '@angular/core'
 })
 export class TiramisuComponent {
   ingredients: string[] = [
-    '30g Butter', '1 EL Milch', '2 EL Zucker', '1 Ei', '5 EL Mehl', '½ TL Backpulver',
-    'Kakaopulve, Früchte, Nüsse oder Vanille nach Wahl'
+    '250g Mascarpone', '250g Léger Mascarpone',
+    '3 Eier', '3 EL Zucker', '450g Früchte (z.B. Himbeeren) oder Kaffee',
+    '2 Pack Löffelbiskuit'
   ]
 
   images = [
