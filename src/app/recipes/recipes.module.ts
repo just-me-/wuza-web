@@ -40,6 +40,7 @@ import {TassenkuchenComponent} from './content/tassenkuchen/tassenkuchen.compone
 import {TeeComponent} from './content/tee/tee.component'
 import {TiramisuComponent} from './content/tiramisu/tiramisu.component'
 import {WaffelnComponent} from './content/waffeln/waffeln.component'
+import {WaffelnGlutenfreiComponent} from './content/waffeln-glutenfrei/waffeln-glutenfrei.component'
 import {ZueriDoenerComponent} from './content/zueri-doener/zueri-doener.component'
 import {TomatenPouletComponent} from './content/tomaten-poulet/tomaten-poulet.component'
 
@@ -85,7 +86,8 @@ import {TomatenPouletComponent} from './content/tomaten-poulet/tomaten-poulet.co
     TiramisuComponent,
     WaffelnComponent,
     ZueriDoenerComponent,
-    TomatenPouletComponent
+    TomatenPouletComponent,
+    WaffelnGlutenfreiComponent
   ],
   imports: [
     CommonModule,

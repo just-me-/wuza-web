@@ -43,6 +43,7 @@ export class RecipeOverviewComponent implements OnInit {
     { name: 'Persischer Schwarztee', link: 'tee'},
     { name: 'Tiramisu', link: 'tiramisu'},
     { name: 'Waffeln', link: 'waffeln'},
+    { name: 'Waffeln (glutenfrei)', link: 'waffeln-glutenfrei'},
     { name: 'Züri-Döner', link: 'zueri-doener'},
     { name: 'Tomaten Poulet', link: 'tomaten-poulet'}
   ]
