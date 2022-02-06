@@ -7,7 +7,10 @@
     <div class="col-md-6 no-padding-left">
       <h2>Zutaten</h2>
       <ul class="ingredients checkable noselect">
-        <li *ngFor="let ingredient of ingredients" (click)="toggleClass($event,'checked')">{{ingredient}}</li>
+        <li *ngFor="let ingredient of ingredients"
+            (click)="toggleClass($event,'checked')"
+            (touchend)="toggleClass($event,'checked')"
+        >{{ingredient}}</li>
       </ul>
     </div>
   </div>

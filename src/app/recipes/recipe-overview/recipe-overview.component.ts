@@ -36,6 +36,7 @@ export class RecipeOverviewComponent implements OnInit {
     { name: 'Poulet aus dem Ofen', link: 'ofen-poulet'},
     { name: 'Schweizer Omelette', link: 'omlette'},
     { name: 'Pancakes', link: 'pancakes'},
+    { name: 'Pancakes (glutenfrei)', link: 'pancakes-glutenfrei'},
     { name: 'Persischer Reis', link: 'reis'},
     { name: 'Französische Salatsauce', link: 'salatsauce'},
     { name: 'Schokoladenkuchen', link: 'schokoladenkuchen'},

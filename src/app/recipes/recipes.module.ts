@@ -43,6 +43,7 @@ import {WaffelnComponent} from './content/waffeln/waffeln.component'
 import {WaffelnGlutenfreiComponent} from './content/waffeln-glutenfrei/waffeln-glutenfrei.component'
 import {ZueriDoenerComponent} from './content/zueri-doener/zueri-doener.component'
 import {TomatenPouletComponent} from './content/tomaten-poulet/tomaten-poulet.component'
+import {PancakesGlutenfreiComponent} from './content/pancakes-glutenfrei/pancakes-glutenfrei.component'
 
 @NgModule({
   declarations: [
@@ -87,7 +88,8 @@ import {TomatenPouletComponent} from './content/tomaten-poulet/tomaten-poulet.co
     WaffelnComponent,
     ZueriDoenerComponent,
     TomatenPouletComponent,
-    WaffelnGlutenfreiComponent
+    WaffelnGlutenfreiComponent,
+    PancakesGlutenfreiComponent
   ],
   imports: [
     CommonModule,
