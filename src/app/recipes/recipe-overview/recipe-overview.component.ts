@@ -36,6 +36,7 @@ export class RecipeOverviewComponent implements OnInit {
     { name: 'Poulet aus dem Ofen', link: 'ofen-poulet'},
     { name: 'Schweizer Omelette', link: 'omlette'},
     { name: 'Pancakes', link: 'pancakes'},
+    { name: 'Pancakes (glutenfrei)', link: 'pancakes-glutenfrei'},
     { name: 'Persischer Reis', link: 'reis'},
     { name: 'Französische Salatsauce', link: 'salatsauce'},
     { name: 'Schokoladenkuchen', link: 'schokoladenkuchen'},
@@ -43,6 +44,7 @@ export class RecipeOverviewComponent implements OnInit {
     { name: 'Persischer Schwarztee', link: 'tee'},
     { name: 'Tiramisu', link: 'tiramisu'},
     { name: 'Waffeln', link: 'waffeln'},
+    { name: 'Waffeln (glutenfrei)', link: 'waffeln-glutenfrei'},
     { name: 'Züri-Döner', link: 'zueri-doener'},
     { name: 'Tomaten Poulet', link: 'tomaten-poulet'}
   ]

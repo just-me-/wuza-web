@@ -6,22 +6,24 @@ var fancyBackgroundRendered = false;
 
 $(document).ready(function(){
     // fancy background
-    VANTA.BIRDS({
-      el: ".container",
-      mouseControls: true,
-      touchControls: true,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      backgroundColor: 0xffffff,
-      backgroundAlpha: 0.001,
-      birdSize: 1.00,
-      speedLimit: 4.00,
-      separation: 90.00,
-      alignment: 40.00,
-      quantity: 2.00
-    })
+    if(window.innerWidth >= 1024) { // tmp..
+      VANTA.BIRDS({
+        el: ".container",
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor: 0xffffff,
+        backgroundAlpha: 0.001,
+        birdSize: 1.00,
+        speedLimit: 4.00,
+        separation: 90.00,
+        alignment: 40.00,
+        quantity: 2.00
+      })
+    }
     renderFancyBackground();
 
     // activate animated img slider
