@@ -42,6 +42,7 @@ import {WaffelnGlutenfreiComponent} from './content/waffeln-glutenfrei/waffeln-g
 import {ZueriDoenerComponent} from './content/zueri-doener/zueri-doener.component'
 import {TomatenPouletComponent} from './content/tomaten-poulet/tomaten-poulet.component'
 import {PancakesGlutenfreiComponent} from './content/pancakes-glutenfrei/pancakes-glutenfrei.component'
+import {PastaComponent} from './content/pasta/pasta.component'
 
 
 const routes: Routes = [
@@ -75,6 +76,7 @@ const routes: Routes = [
   { path: 'nidelwaehe',  component: NidelwaheComponent },
   { path: 'ofen-poulet',  component: OfenPouletComponent },
   { path: 'omlette',  component: OmletteComponent },
+  { path: 'pasta',  component: PastaComponent },
   { path: 'pancakes',  component: PancakesComponent },
   { path: 'pancakes-glutenfrei',  component: PancakesGlutenfreiComponent },
   { path: 'reis',  component: ReisComponent },
