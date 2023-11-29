@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 import {HomeComponent} from './home/home.component'
+import {NotFoundComponent} from './not-found/not-found.component'
+import {ImpressumComponent} from './impressum/impressum.component'
 
 const routes: Routes = [
   {
@@ -14,7 +16,13 @@ const routes: Routes = [
   {
     path: 'rezepte',
     loadChildren: () => import('./recipes/recipes.module').then(m => m.RecipesModule)
-  }
+  },
+  {
+    path: 'projekte',
+    loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule)
+  },
+  { path: 'impressum', component: ImpressumComponent},
+  { path: '**', pathMatch: 'full', component: NotFoundComponent}
 ]
 
 @NgModule({
