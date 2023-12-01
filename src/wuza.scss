@@ -10,6 +10,16 @@ $link-light-color:		  #EFA358;
 $color-touch:           #fa8072; // used for recipes... yet
 /* end varis*/
 
+body {
+  --wuza-color-touch: #{$color-touch};
+}
+
+video, img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 /* for imgs */
 .circular {
     width: 100px;
@@ -104,75 +114,6 @@ ul.material {
   }
 }
 /* end material list */
-
-/* checkable list */
-ul.checkable {
-    list-style: none;
-    padding: 0;
-    li:hover {
-        cursor: pointer;
-    }
-    li:before {
-        content: "\E836";
-        font-family: "Material Icons";
-        padding-right: 8px;
-    }
-    li.checked:before {
-        content: "\E837";
-    }
-}
-/* end checkable list */
-
-/* ordered list */
-ol.steps {
-    counter-reset: li;
-    list-style: none;
-    padding-left: 2.5em;
-
-    li {
-        position: relative;
-        display: block;
-        padding: 5px 10px;
-        margin: 10px 0;
-        background: #ddd;
-    }
-
-    li:before {
-        content: counter(li);
-        counter-increment: li;
-        position: absolute;
-        left: -2.5em;
-        top: 50%;
-        margin-top: -1em;
-        background: $color-touch;
-        height: 2em;
-        width: 2em;
-        line-height: 2em;
-        text-align: center;
-        font-weight: bold;
-    }
-    li:after{
-        position: absolute;
-        content: '';
-        border: .5em solid transparent;
-        left: -1em;
-        top: 50%;
-        margin-top: -.5em;
-        transition: all .3s ease-out;
-
-        -webkit-animation-name: slide;
-        -webkit-animation-duration: 1.5s;
-        -webkit-animation-timing-function: ease-in-out;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-direction: alternate;
-    }
-    li.arrow:after,
-    li:hover:after {
-        left: -3.25em;
-        border-left-color: $color-touch;
-    }
-}
-/* end ordered list */
 
 /* customized slider */
 .swiper-container {
@@ -622,12 +563,21 @@ p, .fade-in {
     @media (max-width: 768px) {
         background: $nav-bg-color-from;
     }
+    @media (min-width: 770px) {
+      .navbar-nav {
+        grid-gap: 1em;
+      }
+    }
     .navbar-nav > li > a {
         color: #fff;
         &:hover {
             color: #373737;
             background: rgba(red($main-bg-color), green($main-bg-color), blue($main-bg-color), $main-bg-alpha);
         }
+      & > span {
+        display: inline-block;
+        margin-right: .25em;
+      }
     }
     .navbar-nav > li.active > a {
         &, &:hover {
@@ -925,10 +875,10 @@ body, .navbar-dark {
     height: 400px;
     background:url(assets/img/404.jpg) no-repeat left bottom;
     background-size: 100% 100%;
-	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-	line-height:1.25em;
-	color:#b2b3c4;
-	font-style:italic;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    line-height:1.25em;
+    color:#b2b3c4;
+    font-style:italic;
     h1 {
         line-height: 1.2em;
         font-weight: normal;
@@ -953,12 +903,12 @@ body, .navbar-dark {
         }
     }
     #footer {
-	color:#d9daed;
-	text-align:center;
-	padding:8px 0 15px 0;
-    margin-top:50px;
-    opacity: 0.4;
-    font-size: 8px
+      color:#d9daed;
+      text-align:center;
+      padding:8px 0 15px 0;
+      margin-top:50px;
+      opacity: 0.4;
+      font-size: 8px
     }
 }
 /* end 404 */
@@ -1455,46 +1405,6 @@ body, .navbar-dark {
     & > div {
         padding-bottom: 20px;
         padding-top: 20px;
-    }
-    img {
-        border-radius: 10px;
-        filter: grayscale(30%);
-        opacity: 0.8;
-        transition: opacity 0.5s ease-out;
-        transition: grayscale 0.5s ease-out;
-    }
-    .item-desc {
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 10px;
-        border-top-right-radius: 0;
-        border-top-left-radius: 0;
-        left: 15px;
-        right: 15px;
-        bottom: 20px;
-        color: white;
-        font-weight: 300;
-        display: block;
-        padding: 8px;
-        position: absolute;
-        text-align: center;
-        opacity: 1;
-        transition: opacity 0.5s ease-out;
-    }
-    a:hover {
-        text-decoration: none;
-        .item-desc {
-            opacity: 0;
-        }
-        img {
-            filter: grayscale(0%);
-            opacity: 1;
-        }
-    }
-}
-/* IE Hack, fix gallery view */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .filtr-filters {
-        justify-content: flex-start;
     }
 }
 

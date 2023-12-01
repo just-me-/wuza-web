@@ -1,0 +1,67 @@
+.row {
+  margin: unset; // TODO remove bs hack...
+}
+
+/* checkable list */
+ul.checkable {
+  list-style: none;
+  padding: 0;
+  li:hover {
+    cursor: pointer;
+  }
+  li:before {
+    content: "\E836";
+    font-family: "Material Icons";
+    padding-right: 8px;
+  }
+  li.checked:before {
+    content: "\E837";
+  }
+}
+/* end checkable list */
+
+/* ordered list */
+:host ::ng-deep ol.steps {
+  counter-reset: li;
+  list-style: none;
+  padding-left: 2.5em;
+
+  li {
+    position: relative;
+    display: block;
+    padding: 5px 10px;
+    margin: 10px 0;
+    background: #ddd;
+  }
+
+  li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: var(--wuza-color-touch);
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+  }
+  li:after{
+    position: absolute;
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;
+
+  }
+  li.arrow:after,
+  li:hover:after {
+    left: -3.25em;
+    border-left-color: var(--wuza-color-touch);
+  }
+}
+/* end ordered list */

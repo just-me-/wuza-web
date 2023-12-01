@@ -44,6 +44,11 @@ import {WaffelnGlutenfreiComponent} from './content/waffeln-glutenfrei/waffeln-g
 import {ZueriDoenerComponent} from './content/zueri-doener/zueri-doener.component'
 import {TomatenPouletComponent} from './content/tomaten-poulet/tomaten-poulet.component'
 import {PancakesGlutenfreiComponent} from './content/pancakes-glutenfrei/pancakes-glutenfrei.component'
+import {RecipesService} from './recipes.service'
+import {ImageSliderModule} from '../common/image-slider/image-slider.module'
+import {PastaComponent} from './content/pasta/pasta.component'
+import { RecipeImgSrcPipe } from './recipe-img-src.pipe'
+import { RecipeImgAltPipe } from './recipe-img-alt.pipe'
 
 @NgModule({
   declarations: [
@@ -89,11 +94,16 @@ import {PancakesGlutenfreiComponent} from './content/pancakes-glutenfrei/pancake
     ZueriDoenerComponent,
     TomatenPouletComponent,
     WaffelnGlutenfreiComponent,
-    PancakesGlutenfreiComponent
+    PancakesGlutenfreiComponent,
+    PastaComponent,
+    RecipeImgSrcPipe,
+    RecipeImgAltPipe
   ],
+  providers: [RecipesService, RecipeImgSrcPipe],
   imports: [
     CommonModule,
-    RecipesRoutingModule
+    RecipesRoutingModule,
+    ImageSliderModule
   ]
 })
 export class RecipesModule { }

@@ -6,9 +6,9 @@ var fancyBackgroundRendered = false;
 
 $(document).ready(function(){
     // fancy background
-    if(window.innerWidth >= 1024) { // tmp..
+    if(false && window.innerWidth >= 1024) { // tmp..
       VANTA.BIRDS({
-        el: ".container",
+        el: ".container #birds",
         mouseControls: true,
         touchControls: true,
         minHeight: 200.00,
@@ -24,35 +24,8 @@ $(document).ready(function(){
         quantity: 2.00
       })
     }
-    renderFancyBackground();
+    // renderFancyBackground();
 
-    // activate animated img slider
-    var mySwiper = new Swiper ('.swiper-slider', {
-        // Optional parameters
-        speed: 500,
-        autoplay: 3500,
-
-        // If we need pagination
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-
-        // Navigation arrows
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-    });
-    var mySwiper = new Swiper ('.swiper-slider-no-auto', {
-        // Optional parameters
-        loop: false,
-        speed: 500,
-
-        // If we need pagination
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-
-        // Navigation arrows
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-    });
 
 	// bubble effect
 	$.each($(".bubbles"), function(){
@@ -70,19 +43,10 @@ $(document).ready(function(){
 		},4000);
 	});
 
-    // ordered lists .steps => arrow animation
-    var time_for_one = 1500;
-    // trigger first one
-    setClassStepByStep("ol.steps li", "arrow", time_for_one);
-    // add endless loop
-    setInterval(function(){
-        setClassStepByStep("ol.steps li", "arrow", time_for_one);
-    }, time_for_one * $("ol.steps li").length)
-
 });
 
 $( window ).resize(function() {
-  renderFancyBackground();
+  // renderFancyBackground();
 });
 
 

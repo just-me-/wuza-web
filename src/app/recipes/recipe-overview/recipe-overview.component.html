@@ -1,7 +1,18 @@
 <h1>Rezepte</h1>
-<p>Die Rezepte folgen bald</p>
+<p>
+  Bist Du auf der Suche nach einer Inspiration oder nach einem spezifischen Rezept von mir?
+  Dann ist das genau der richtige Ort!
+</p>
 
-<ng-container *ngFor="let entry of entries">
-  <a [routerLink]="entry.link">{{entry.name}}</a>
-  <br/>
-</ng-container>
+
+<!-- Filters: Alle, Hauptspeise, Beilage, Dessert, Apéro, ICON SHUFFLE <i class="material-icons md-14">shuffle</i> -->
+
+<section class="recipes">
+  <div class="recipe" *ngFor="let entry of entries">
+    <a [routerLink]="entry.link">
+      <img [src]="entry.link | recipeImgSrc" [alt]="entry.name + ' Titelbild'">
+      <span>{{entry.name}}</span>
+    </a>
+  </div>
+</section>
+
