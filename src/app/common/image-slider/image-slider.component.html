@@ -1,7 +1,7 @@
-<ng-container *ngIf="images">
+<div *ngIf="images" class="noselect">
   <swiper-container>
     <swiper-slide navigation="true" pagination="true" lazy="true" *ngFor="let img of images">
       <img loading="lazy" [src]="img.path" [alt]="img.altText" [title]="img.title">
     </swiper-slide>
   </swiper-container>
-</ng-container>
+</div>

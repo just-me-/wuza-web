@@ -14,6 +14,12 @@ body {
   --wuza-color-touch: #{$color-touch};
 }
 
+video, img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 /* for imgs */
 .circular {
     width: 100px;
