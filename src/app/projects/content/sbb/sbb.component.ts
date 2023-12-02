@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'wuza-sbb',
@@ -13,11 +13,6 @@ import { Component, OnInit } from '@angular/core'
     }`
   ]
 })
-export class SbbComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class SbbComponent {
 
 }

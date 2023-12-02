@@ -47,7 +47,7 @@ export class RecipeComponent implements OnInit {
     for(let i = 1; i <= imageCount; i++) {
       images.push(this.srcPipe.transform(link, i))
     }
-    return images.map((img, index) => ({
+    return images.map((img, _index) => ({
         path: img,
         title: link, // TODO...
         altText: link // TODO...

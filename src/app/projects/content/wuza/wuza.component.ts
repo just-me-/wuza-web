@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 import {ImageSliderImage} from '../../../common/image-slider/image-slider-image'
 
 @Component({
@@ -7,7 +7,7 @@ import {ImageSliderImage} from '../../../common/image-slider/image-slider-image'
   styles: [
   ]
 })
-export class WuzaComponent implements OnInit {
+export class WuzaComponent {
 
   imagesWuza: ImageSliderImage[] = [
     {path: '/assets/img/projects/wuza_original.jpg', title: 'WUZA besteht seit dem 12.12.15', altText: 'Wuza Original'},
@@ -24,10 +24,5 @@ export class WuzaComponent implements OnInit {
     {path: '/assets/img/projects/wuza_website_maerstetten.jpg', title: 'buerger-maerstetten.ch', altText: 'Website Märstetten'},
     {path: '/assets/img/projects/wuza_website_fahrlehrer.jpg', title: 'meinfahrlehrer.ch', altText: 'Website Fahrlehrer'},
   ]
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

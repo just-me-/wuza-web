@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'wuza-menu',
   templateUrl: './menu.component.html'
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
 
   menuEntries = [
     { name: 'Home', path: 'home', icon: 'home'},
@@ -15,11 +15,5 @@ export class MenuComponent implements OnInit {
     // { name: 'Kontakt', path: 'contact', icon: 'face'},
     { name: 'Impressum', path: 'impressum', icon: 'account_balance'},
   ]
-
-  constructor() {
-  }
-
-  ngOnInit(): void {
-  }
 
 }

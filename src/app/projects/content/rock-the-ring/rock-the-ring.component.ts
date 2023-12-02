@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'wuza-rock-the-ring',
@@ -6,11 +6,6 @@ import { Component, OnInit } from '@angular/core'
   styles: [
   ]
 })
-export class RockTheRingComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class RockTheRingComponent {
 
 }

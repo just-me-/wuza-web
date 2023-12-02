@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, Input} from '@angular/core'
+import {Component, Input} from '@angular/core'
 import {ImageSliderImage} from './image-slider-image'
 
 @Component({
@@ -6,7 +6,7 @@ import {ImageSliderImage} from './image-slider-image'
   templateUrl: './image-slider.component.html',
   styleUrls: ['./image-slider.component.scss']
 })
-export class ImageSliderComponent implements AfterViewInit {
+export class ImageSliderComponent {
   @Input() images?: ImageSliderImage[]
 
   swiperConfig: any /*SwiperOptions*/ = {
@@ -23,8 +23,5 @@ export class ImageSliderComponent implements AfterViewInit {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     }
-  }
-
-  ngAfterViewInit(): void {
   }
 }
