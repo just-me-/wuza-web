@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core'
-import {projects, WuzaProject, WuzaProjectRoute} from './projects'
+import {projects, WuzaProject} from './projects'
 
 @Injectable()
 export class ProjectsService {

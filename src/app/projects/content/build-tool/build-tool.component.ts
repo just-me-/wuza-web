@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 import {ImageSliderImage} from '../../../common/image-slider/image-slider-image'
 
 @Component({
@@ -7,7 +7,7 @@ import {ImageSliderImage} from '../../../common/image-slider/image-slider-image'
   styles: [
   ]
 })
-export class BuildToolComponent implements OnInit {
+export class BuildToolComponent {
   imagesSmall: ImageSliderImage[] = [
     {path: '/assets/img/projects/build_tool_small_1.jpg', title: 'Smartphone Ansicht', altText: 'Build Tool Small View 1'},
     {path: '/assets/img/projects/build_tool_small_2.jpg', altText: 'Build Tool Small View 2'},
@@ -30,10 +30,5 @@ export class BuildToolComponent implements OnInit {
     {path: '/assets/img/projects/build_tool_big_4.jpg', title: 'Bearbeitung', altText: 'Build Tool Big View 4'},
     {path: '/assets/img/projects/build_tool_big_5.jpg', altText: 'Build Tool Big View 5'}
   ]
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

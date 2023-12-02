@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 import {ImageSliderImage} from '../../../common/image-slider/image-slider-image'
 
 @Component({
@@ -7,7 +7,7 @@ import {ImageSliderImage} from '../../../common/image-slider/image-slider-image'
   styles: [
   ]
 })
-export class WordpressComponent implements OnInit {
+export class WordpressComponent {
 
   images: ImageSliderImage[] = [
     {path: '/assets/img/projects/wordpress_hangloose.gif', title: 'Hang Loose', altText: 'Hang Loose'},
@@ -17,10 +17,5 @@ export class WordpressComponent implements OnInit {
     {path: '/assets/img/projects/wordpress_sam.jpg', title: 'S.A.M. Musik', altText: 'SAM'},
     {path: '/assets/img/projects/wordpress_redi.jpg', title: 'Redi AG', altText: 'Redi'},
   ]
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

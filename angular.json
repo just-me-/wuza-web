@@ -27,7 +27,6 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -36,13 +35,11 @@
               "node_modules/normalize.css/normalize.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/material-design-icons/iconfont/material-icons.css",
-              "node_modules/cookieconsent/build/cookieconsent.min.css",
               "src/wuza.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/cookieconsent/build/cookieconsent.min.js",
               "src/assets/js/aos.js",
               "src/assets/js/jquery.filterizr.min.js",
               "src/assets/js/raphael.min.js",
@@ -50,7 +47,13 @@
               "src/assets/js/vanta.birds.min.js",
               "src/assets/js/vanta.cells.min.js",
               "src/assets/js/wuza.js"
-            ]
+            ],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -80,23 +83,24 @@
                 }
               ]
             }
-          }
+          },
+          "defaultConfiguration": ""
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "wuza-web:build"
+            "buildTarget": "wuza-web:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "wuza-web:build:production"
+              "buildTarget": "wuza-web:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "wuza-web:build"
+            "buildTarget": "wuza-web:build"
           }
         },
         "test": {
@@ -114,7 +118,6 @@
               "src/wuza.scss"
             ],
             "scripts": [
-              "node_modules/cookieconsent/build/cookieconsent.min.js"
             ]
           }
         },
@@ -142,5 +145,7 @@
       }
     }
   },
-  "defaultProject": "wuza-web"
+  "cli": {
+    "analytics": false
+  }
 }

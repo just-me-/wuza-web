@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 import {ImageSliderImage} from '../../../common/image-slider/image-slider-image'
 
 @Component({
@@ -7,7 +7,7 @@ import {ImageSliderImage} from '../../../common/image-slider/image-slider-image'
   styles: [
   ]
 })
-export class TesoAddonsComponent implements OnInit {
+export class TesoAddonsComponent {
   imagesRez: ImageSliderImage[] = [
     {path: '/assets/img/projects/teso_addons_rez1.jpg', title: 'Ein Pfeil zeigt die Richtung', altText: 'Rez Screen 1'},
     {path: '/assets/img/projects/teso_addons_rez2.jpg', title: 'Je nach Laufrichtung ändert sich die Farbe', altText: 'Rez Screen 2'},
@@ -25,9 +25,5 @@ export class TesoAddonsComponent implements OnInit {
     {path: '/assets/img/projects/teso_addons_raid1.jpg', title: 'Schadenstabelle', altText: 'Raid Screen 1'},
     {path: '/assets/img/projects/teso_addons_raid2.jpg', title: 'Pausentimer', altText: 'Raid Screen 2'},
   ]
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

@@ -1,15 +1,9 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'wuza-project',
-  templateUrl: './project.component.html',
-  styleUrls: ['./project.component.css']
+  templateUrl: './project.component.html'
 })
-export class ProjectComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class ProjectComponent {
 
 }

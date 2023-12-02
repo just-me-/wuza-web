@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'wuza-antenne',
@@ -6,11 +6,6 @@ import { Component, OnInit } from '@angular/core'
   styles: [
   ]
 })
-export class AntenneComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class AntenneComponent {
 
 }
