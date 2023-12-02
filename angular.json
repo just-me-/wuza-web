@@ -35,13 +35,11 @@
               "node_modules/normalize.css/normalize.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/material-design-icons/iconfont/material-icons.css",
-              "node_modules/cookieconsent/build/cookieconsent.min.css",
               "src/wuza.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/cookieconsent/build/cookieconsent.min.js",
               "src/assets/js/aos.js",
               "src/assets/js/jquery.filterizr.min.js",
               "src/assets/js/raphael.min.js",
@@ -120,7 +118,6 @@
               "src/wuza.scss"
             ],
             "scripts": [
-              "node_modules/cookieconsent/build/cookieconsent.min.js"
             ]
           }
         },
@@ -147,5 +144,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

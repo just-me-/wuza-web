@@ -1,7 +1,5 @@
-import {AfterViewInit, Component, CUSTOM_ELEMENTS_SCHEMA, Input} from '@angular/core'
+import {AfterViewInit, Component, Input} from '@angular/core'
 import {ImageSliderImage} from './image-slider-image'
-import {register} from 'swiper/swiper-element'
-//import {SwiperOptions} from 'swiper/types'
 
 @Component({
   selector: 'wuza-image-slider',
@@ -28,6 +26,5 @@ export class ImageSliderComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    register()
   }
 }
