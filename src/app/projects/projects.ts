@@ -34,6 +34,30 @@ export const projectRoutes: () => WuzaProjectRoute[] = () => projects
     })) ?? []
 
 export const projects: WuzaProject[] = [
+
+  {
+    title: 'Accessibility', time: 'November 2023',
+    content: 'Barrierefreier Zugang ist insbesondere im Web wichtig. ' +
+      'Durch eine Weiterbildung konnte ich meine Kenntnisse in diesem Bereich vertiefen, welche ich insbesondere ' +
+      'bei den aktuellen Firmenprojekten einsetzen kann.'
+  },
+
+  {
+    title: 'Mentor', time: 'seit August 2023',
+    content: 'Beim Thurgauer Gewerbeverband bin ich ehrenamtlich als Mentor tätig ' +
+      'und begleite Jugendliche bei der Suche nach einer Lehrstelle.'
+  },
+
+  {
+    title: 'W-JAX', time: 'November 2022',
+    content: 'Ich durfte erste Erfahrungen mit den Paint und Properties & Values APIs von CSS Houdini sammeln.'
+  },
+
+  {
+    title: 'CSS Animations', time: 'Januar 2022',
+    content: 'Durch eine Weiterbildung konnte ich mit im Bereich der CSS Animations vertiefen.'
+  },
+
   {
     template: SaComponent, link: 'sa', title: 'Dafny Language Server', time: 'Sep. bis Dez. 2019',
     content: 'In unserer Studienarbeit wurde der Dafny Language Server in C# neu implementiert. ' +
