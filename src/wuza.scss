@@ -1228,18 +1228,18 @@ body, .navbar-dark {
 	@media (max-width: 768px) {
 		border-top-right-radius: 0;
 		margin-right: -5.5%;
-		margin-top: -2em;
+    margin-top: -8px;
 	}
 	@media (min-width: 769px) {
-		margin-top: -27px;
+		margin-top: -8px;
 		margin-right: -35px;
 	}
 	@media (min-width: 840px) {
-		margin-top: -27px;
+		margin-top: -8px;
 		margin-right: -38px;
 	}
 	@media (min-width: 992px) {
-		margin-top: -27px;
+		margin-top: -8px;
 		margin-right: -46px;
 	}
 }
