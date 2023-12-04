@@ -1,7 +1,6 @@
 import {NgModule} from '@angular/core'
 import {CommonModule} from '@angular/common'
 import {ProjectsComponent} from './projects.component'
-import {ProjectComponent} from './project/project.component'
 import {ProjectsService} from './projects.service'
 import {RouterModule, ROUTES, Routes} from '@angular/router'
 import {AntenneComponent} from './content/antenne/antenne.component'
@@ -22,6 +21,7 @@ import {WuzaComponent} from './content/wuza/wuza.component'
 import {projectRoutes} from './projects'
 import {GithubRibbonModule} from '../common/github-ribbon/github-ribbon.module'
 import {ImageSliderModule} from '../common/image-slider/image-slider.module'
+import {WuzaCommonModule} from '../common/common.module'
 
 const standardRoutes: Routes = [
   {
@@ -34,7 +34,6 @@ const standardRoutes: Routes = [
 @NgModule({
   declarations: [
     ProjectsComponent,
-    ProjectComponent,
     AntenneComponent,
     BuildToolComponent,
     EasymechComponent,
@@ -75,6 +74,7 @@ const standardRoutes: Routes = [
   ],
   imports: [
     CommonModule,
+    WuzaCommonModule,
     RouterModule,
     GithubRibbonModule,
     ImageSliderModule

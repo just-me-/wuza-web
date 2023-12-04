@@ -2,7 +2,7 @@
 
   <wuza-github-ribbon link="https://github.com/just-me-"></wuza-github-ribbon>
 
-  <h1>Projekte</h1>
+  <h1 wuzaBubbles>Projekte</h1>
   <p>
     In diesem Bereich ist ein Auszug meiner Projekte gelistet.
     Für genauere Details zu den jeweiligen Projekten, kann via die jeweilige Verlinkung der Überschrift das Projekt geöffnet werden.
@@ -20,7 +20,7 @@
                 </span>
                 <span *ngIf="project.time" class="time-wrapper"><span class="time">{{project.time}}</span></span>
             </div>
-          <div *ngIf="project.content" class="desc" data-aos="zoom-in">{{project.content}}</div>
+          <div *ngIf="project.content" class="desc" wuzaSlideInto>{{project.content}}</div>
         </div>
     </li>
   </ul>

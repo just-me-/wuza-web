@@ -1,0 +1,13 @@
+.wuza-slide-into {
+  transition: opacity 1.25s, transform .75s;
+  transition-delay: .15s;
+
+  &, &.-hide {
+    opacity: 0;
+    transform: translateY(-1em);
+  }
+  &.-show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
