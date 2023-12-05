@@ -38,14 +38,7 @@
               "src/wuza.scss"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "src/assets/js/aos.js",
-              "src/assets/js/jquery.filterizr.min.js",
-              "src/assets/js/raphael.min.js",
-              "src/assets/js/three.r95.min.js",
-              "src/assets/js/vanta.birds.min.js",
-              "src/assets/js/vanta.cells.min.js",
               "src/assets/js/wuza.js"
             ],
             "vendorChunk": true,

@@ -49,6 +49,7 @@ import {ImageSliderModule} from '../common/image-slider/image-slider.module'
 import {PastaComponent} from './content/pasta/pasta.component'
 import { RecipeImgSrcPipe } from './recipe-img-src.pipe'
 import { RecipeImgAltPipe } from './recipe-img-alt.pipe'
+import {WuzaCommonModule} from '../common/common.module'
 
 @NgModule({
   declarations: [
@@ -102,6 +103,7 @@ import { RecipeImgAltPipe } from './recipe-img-alt.pipe'
   providers: [RecipesService, RecipeImgSrcPipe],
   imports: [
     CommonModule,
+    WuzaCommonModule,
     RecipesRoutingModule,
     ImageSliderModule
   ]

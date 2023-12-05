@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component'
 import { HomeComponent } from './home/home.component'
 import { NotFoundComponent } from './not-found/not-found.component'
 import { ImpressumComponent } from './impressum/impressum.component'
+import {WuzaCommonModule} from './common/common.module'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ImpressumComponent } from './impressum/impressum.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    WuzaCommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

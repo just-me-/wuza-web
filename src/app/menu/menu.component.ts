@@ -13,6 +13,8 @@ export class MenuComponent implements OnInit, OnDestroy {
   private unsubscribe$ = new Subject<void>()
   private router = inject(Router)
 
+  isBurgerNavCollapsed = true
+
   private get navBarToggleIsVisible() {
     return this.navbarToggler.nativeElement.getAttribute('aria-expanded') === 'true'
   }

@@ -7,9 +7,11 @@
   </a>
 
   <button #navbarToggler type="button"
-    class="navbar-toggler collapsed"
+    class="navbar-toggler collapsed" [class.collapsed]="isBurgerNavCollapsed"
     data-toggle="collapse" data-target="#navbar"
-    aria-expanded="false" aria-controls="navbar"
+    aria-controls="navbar"
+    (click)="isBurgerNavCollapsed = !isBurgerNavCollapsed"
+    [attr.aria-expanded]="!isBurgerNavCollapsed"
   >
     <span class="sr-only">Navigation</span>
     <div id="menu-border">
@@ -21,7 +23,7 @@
     </div>
   </button>
 
-  <div id="navbar" class="collapse navbar-collapse">
+  <div id="navbar" class="collapse navbar-collapse" [class.show]="!isBurgerNavCollapsed">
       <ul class="nav navbar-nav">
         <li *ngFor="let entry of menuEntries" class="nav-item" routerLinkActive="active">
           <a [routerLink]="entry.path" class="nav-link">
