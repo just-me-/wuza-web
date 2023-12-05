@@ -2,3 +2,19 @@ img {
   width: 100%;
   height: auto;
 }
+
+:host {
+  --swiper-navigation-color: var(--wuza-color-touch);
+  --swiper-pagination-color: var(--wuza-color-touch);
+  --swiper-pagination-bullet-width: 1em;
+  --swiper-pagination-bullet-height: 1em;
+  --swiper-pagination-bullet-inactive-opacity: .5;
+
+  // tmp quick fix for projects
+  position: relative;
+  z-index: 300;
+
+  ::ng-deep swiper-container {
+    --swiper-theme-color: var(--wuza-color-touch);
+  }
+}
