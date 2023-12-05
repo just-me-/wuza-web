@@ -1,4 +1,4 @@
-import {AfterViewChecked, AfterViewInit, Directive, ElementRef, HostListener} from '@angular/core'
+import {AfterViewInit, Directive, ElementRef, HostListener} from '@angular/core'
 
 @Directive({
   selector: '[wuzaSlideInto]',
