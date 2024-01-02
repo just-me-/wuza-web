@@ -3,7 +3,10 @@
   grid-gap: 1em;
   grid-template-columns: repeat(3, auto);
 
-  // todo on mobile..
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, auto);
+  }
+  // todo on mobile.. mixin
 
   .recipe {
     position: relative;

@@ -21,9 +21,16 @@ export class SlideIntoDirective implements AfterViewInit {
 
   private checkVisibility(): void {
     const windowHeight = window.innerHeight
-    const boundingRect = this.el.nativeElement.getBoundingClientRect()
+    const { top, _left, bottom, _right } = this.el.nativeElement.getBoundingClientRect()
+    const animationOffset = 20
 
-    if (boundingRect.top >= 0 && boundingRect.bottom <= windowHeight) {
+    const partiallyVisible = (
+      top > 0 && top < windowHeight - animationOffset
+    ) || (
+      bottom > 0 && bottom < windowHeight
+    )
+
+    if (partiallyVisible) {
       this.show()
     } else {
       this.hide()

@@ -2,6 +2,7 @@ import {Component, ElementRef, inject, OnDestroy, OnInit, ViewChild} from '@angu
 import { Subject } from 'rxjs'
 import {NavigationEnd, Router} from '@angular/router'
 import {takeUntil} from 'rxjs/operators'
+import {wuzaIcons} from '../common/icon/icons'
 
 @Component({
   selector: 'wuza-menu',
@@ -19,14 +20,14 @@ export class MenuComponent implements OnInit, OnDestroy {
     return this.navbarToggler.nativeElement.getAttribute('aria-expanded') === 'true'
   }
 
-  menuEntries = [
+  menuEntries: {name: string; path: string; icon: wuzaIcons}[] = [
     { name: 'Home', path: 'home', icon: 'home'},
     { name: 'Rezepte', path: 'rezepte', icon: 'restaurant'},
 
     // { name: 'Zitate', path: 'quotes', icon: 'bookmark'},
     { name: 'Projekte', path: 'projekte', icon: 'book'},
     // { name: 'Kontakt', path: 'contact', icon: 'face'},
-    { name: 'Impressum', path: 'impressum', icon: 'account_balance'},
+    { name: 'Impressum', path: 'impressum', icon: 'impressum'},
   ]
 
   ngOnInit() {

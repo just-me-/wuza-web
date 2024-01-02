@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component'
 import { NotFoundComponent } from './not-found/not-found.component'
 import { ImpressumComponent } from './impressum/impressum.component'
 import {WuzaCommonModule} from './common/common.module'
+import {IconModule} from './common/icon/icon.module'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {WuzaCommonModule} from './common/common.module'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    WuzaCommonModule
+    WuzaCommonModule,
+    IconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

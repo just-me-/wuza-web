@@ -1,4 +1,4 @@
-<nav class="navbar noselect navbar-expand-md navbar-dark">
+<nav class="navbar noselect">
 
   <a routerLink="/home" class="navbar-brand no-padding no-margin">
     <div class="animated-logo">
@@ -10,10 +10,10 @@
     class="navbar-toggler collapsed" [class.collapsed]="isBurgerNavCollapsed"
     data-toggle="collapse" data-target="#navbar"
     aria-controls="navbar"
+    aria-label="Navigation"
     (click)="isBurgerNavCollapsed = !isBurgerNavCollapsed"
     [attr.aria-expanded]="!isBurgerNavCollapsed"
   >
-    <span class="sr-only">Navigation</span>
     <div id="menu-border">
       <svg class="ham hamRotate" viewBox="0 0 100 100" width="40" height="40">
         <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
@@ -27,7 +27,7 @@
       <ul class="nav navbar-nav">
         <li *ngFor="let entry of menuEntries" class="nav-item" routerLinkActive="active">
           <a [routerLink]="entry.path" class="nav-link">
-            <span class="material-icons md-14 middle hidden-sm">{{entry.icon}}</span>
+            <wuza-icon [icon]="entry.icon" [size]="14"></wuza-icon>
             <span class="menu_titel middle">{{entry.name}}</span>
           </a>
         </li>
