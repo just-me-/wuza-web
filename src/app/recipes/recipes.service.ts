@@ -44,7 +44,11 @@ export class RecipesService {
     { name: 'Waffeln (glutenfrei)', link: 'waffeln-glutenfrei', imageCount: 0},
     { name: 'Züri-Döner', link: 'zueri-doener', imageCount: 2},
     { name: 'Tomaten Poulet', link: 'tomaten-poulet', imageCount: 8},
-    { name: 'Sizilianische Pasta', link: 'pasta', imageCount: 2}
+    { name: 'Sizilianische Pasta', link: 'pasta', imageCount: 2},
+    { name: 'Safran Pudding', link: 'safran-pudding', imageCount: 0},
+    { name: 'Kastanien-Kuchen', link: 'kastanien-kuchen', imageCount: 0},
+    { name: 'Daisy\'s Chilli', link: 'daisys-chilli', imageCount: 0},
+    { name: 'Brownies (vegan)', link: 'brownies-vegan', imageCount: 0}
   ]
 
   imageCountByLink = (link: string): number => this.entries.find(
