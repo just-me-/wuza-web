@@ -50,6 +50,10 @@ import {PastaComponent} from './content/pasta/pasta.component'
 import { RecipeImgSrcPipe } from './recipe-img-src.pipe'
 import { RecipeImgAltPipe } from './recipe-img-alt.pipe'
 import {WuzaCommonModule} from '../common/common.module'
+import {SafranPuddingComponent} from './content/safran-pudding/safran-pudding.component'
+import {KastanienKuchenComponent} from './content/kastanien-kuchen/kastanien-kuchen.component'
+import {DaisysChilliComponent} from './content/daisys-chilli/daisys-chilli.component'
+import {BrowniesVeganComponent} from './content/brownies-vegan/brownies-vegan.component'
 
 @NgModule({
   declarations: [
@@ -97,6 +101,10 @@ import {WuzaCommonModule} from '../common/common.module'
     WaffelnGlutenfreiComponent,
     PancakesGlutenfreiComponent,
     PastaComponent,
+    SafranPuddingComponent,
+    KastanienKuchenComponent,
+    DaisysChilliComponent,
+    BrowniesVeganComponent,
     RecipeImgSrcPipe,
     RecipeImgAltPipe
   ],

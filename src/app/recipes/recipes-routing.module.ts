@@ -43,6 +43,10 @@ import {ZueriDoenerComponent} from './content/zueri-doener/zueri-doener.componen
 import {TomatenPouletComponent} from './content/tomaten-poulet/tomaten-poulet.component'
 import {PancakesGlutenfreiComponent} from './content/pancakes-glutenfrei/pancakes-glutenfrei.component'
 import {PastaComponent} from './content/pasta/pasta.component'
+import {SafranPuddingComponent} from './content/safran-pudding/safran-pudding.component'
+import {KastanienKuchenComponent} from './content/kastanien-kuchen/kastanien-kuchen.component'
+import {DaisysChilliComponent} from './content/daisys-chilli/daisys-chilli.component'
+import {BrowniesVeganComponent} from './content/brownies-vegan/brownies-vegan.component'
 
 
 const routes: Routes = [
@@ -88,7 +92,11 @@ const routes: Routes = [
   { path: 'waffeln',  component: WaffelnComponent },
   { path: 'waffeln-glutenfrei',  component: WaffelnGlutenfreiComponent },
   { path: 'zueri-doener',  component: ZueriDoenerComponent },
-  { path: 'tomaten-poulet', component: TomatenPouletComponent }
+  { path: 'tomaten-poulet', component: TomatenPouletComponent },
+  { path: 'safran-pudding', component: SafranPuddingComponent },
+  { path: 'kastanien-kuchen', component: KastanienKuchenComponent },
+  { path: 'daisys-chilli', component: DaisysChilliComponent },
+  { path: 'brownies-vegan', component: BrowniesVeganComponent }
 ]
 
 @NgModule({
