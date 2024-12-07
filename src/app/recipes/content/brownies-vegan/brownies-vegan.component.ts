@@ -6,7 +6,14 @@ import { Component } from '@angular/core'
 })
 export class BrowniesVeganComponent {
   ingredients: string[] = [
-    'tbd'
+    '100g Kokosöl oder Margarine',
+    '350g dunkle Schokolade',
+    '350g Rohzucker, grobkörnig',
+    '300g gemahlene, geschälte Mandeln',
+    '200g Mehl (glutenfrei)',
+    '1 TL Backpulver',
+    '1 Päckli Vanillezucker',
+    '100g Baumnusskerne'
   ]
 
   images = [

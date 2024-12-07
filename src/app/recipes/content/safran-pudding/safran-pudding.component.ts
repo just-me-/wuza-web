@@ -7,7 +7,11 @@ import { Component } from '@angular/core'
 export class SafranPuddingComponent {
 
   ingredients: string[] = [
-    'tbd'
+    '60g Milchreis',
+    '80g Zucker',
+    'Priese Safranfäden',
+    '2 TL Maisstärke',
+    '3 EL Rosenwasser'
   ]
 
   images = [
