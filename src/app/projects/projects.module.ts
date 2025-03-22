@@ -22,6 +22,8 @@ import {projectRoutes} from './projects'
 import {GithubRibbonModule} from '../common/github-ribbon/github-ribbon.module'
 import {ImageSliderModule} from '../common/image-slider/image-slider.module'
 import {WuzaCommonModule} from '../common/common.module'
+import {MindstepsComponent} from './content/mindsteps/mindsteps.component'
+import {TaxviewerComponent} from './content/taxviewer/taxviewer.component'
 
 const standardRoutes: Routes = [
   {
@@ -41,9 +43,11 @@ const standardRoutes: Routes = [
     IbcComponent,
     IpaComponent,
     JsMarioComponent,
+    MindstepsComponent,
     RockTheRingComponent,
     SaComponent,
     SbbComponent,
+    TaxviewerComponent,
     TesoAddonsComponent,
     TesoMapComponent,
     WgAppComponent,
