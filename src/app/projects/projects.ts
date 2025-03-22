@@ -74,27 +74,27 @@ export const projects: WuzaProject[] = [
   },
 
   {
-    template: SaComponent, link: 'sa', title: 'Dafny Language Server', time: 'Sep. bis Dez. 2019',
+    template: SaComponent, link: 'sa', title: 'Dafny Language Server', time: '2019',
     content: 'In unserer Studienarbeit wurde der Dafny Language Server in C# neu implementiert. ' +
       'Das in TypeScript geschriebene Visual Studio Code Plugin, welches die Sprache Dafny unterstützt, ' +
       'kommuniziert über das LSP direkt mit dem Language Server.'
   },
 
   {
-    title: 'iOS AppQuest als Coach', time: 'Sep. bis Dez. 2019',
+    title: 'iOS AppQuest als Coach', time: '2019',
     content: 'Nachdem ich im 2014 Teilnehmer an der AppQuest war, bin ich nun selbst ' +
       'als Coach für die beiden diesjährigen iOS-Teams verantwortlich.'
   },
 
   {
-    template: AntenneComponent, link: 'antenne', title: 'Newsfeed Antenne Märstetten', time: 'Juni 2019',
+    template: AntenneComponent, link: 'antenne', title: 'Newsfeed Antenne', time: 'Juni 2019',
     content: 'Mittels React wurde ein Newsticker für die Bewohner von Märstetten implementiert.'
   },
 
   {
     template: EasymechComponent, link: 'easymech',
     title: 'EasyMech',
-    time: 'seit Februar 2019',
+    time: '2019',
     content: 'Für die Firma DuKoStapler wurde ein Maschinenverwaltungstool programmiert. ' +
       'Das Frontend wurde mit React realisiert und das Backend mit C# in ASP.NET.'
   },
@@ -102,14 +102,14 @@ export const projects: WuzaProject[] = [
   {
     template: RockTheRingComponent, link: 'rock_the_ring',
     title: 'Rock the Ring',
-    time: 'Februar bis Mai 2019',
+    time: '2019',
     content: 'Für das Festival «Rock the Ring» wurde eine neue, moderne Website erstellt. ' +
       'Zusätzlich wurden moderne Lösungsansätze mit nativen ' +
       'Smartphone-Funktionen (wie Ticketkäufe per Siri und Apple Pay) mittels React Native entworfen.'
   },
 
   {
-    title: 'Studentenportal', time: 'seit Mai 2018',
+    title: 'Studentenportal', time: '2018 bis 2020',
     content: 'Seit Mai administriere ich das Studentenportal.ch der HSR und entwickle es weiter. ' +
       'Es basiert auf dem Django Web Framework, welches in Python geschrieben wurde.'
   },
@@ -117,7 +117,7 @@ export const projects: WuzaProject[] = [
   {
     template: WgAppComponent, link: 'wg-app',
     title: 'WG App',
-    time: 'seit Mai 2018',
+    time: '2018 bis 2020',
     content: 'Eine Meteor Applikation für die Organisation des WG-Lebens. ' +
       'Dazu gehören eine Einkaufsliste, Eventveranstaltungen und Kochplanung.'
   },
@@ -145,7 +145,7 @@ export const projects: WuzaProject[] = [
   },
 
   {
-    title: 'Meteor', time: 'seit August 2017',
+    title: 'Meteor', time: '2017 bis 2020',
     content: 'Erste Applikationen mit dem Full-Stack JavaScript-Framework sowie Pläne, ' +
       'gewisse WUZA-Projekte (wie WUZAlife) mit Meteor neu zu schreiben.'
   },
@@ -160,7 +160,7 @@ export const projects: WuzaProject[] = [
   },
 
   {
-    template: WordpressComponent, link: 'wordpress', title: 'WordPress Sites', time: 'seit Ende 2016',
+    template: WordpressComponent, link: 'wordpress', title: 'WordPress Sites', time: '2016 bis 2017',
     content: 'Via BeeBase wurden mehrere Webauftritte von Kunden auf eine moderne Art umgesetzt.'
   },
 
@@ -197,8 +197,8 @@ export const projects: WuzaProject[] = [
   },
 
   {
-    template: BuildToolComponent, link: 'build-tool', time: 'Oktober 2014 bis Januar 2015',
-    title: 'Build Tool - das WBB Plugin',
+    template: BuildToolComponent, link: 'build-tool', time: '2014 bis 2015',
+    title: 'Build Tool - WBB Plugin',
     content: 'WBB steht für "WoltLab Burning Board" und ist eine ' +
       'verbreitete Forensoftware für Communities. Dafür habe ich ein ' +
       'kleines Tool - einst für Gw2, derweilen für ESO - in PHP geschrieben.'
@@ -206,10 +206,9 @@ export const projects: WuzaProject[] = [
 
   {
     template: IbcComponent, link: 'ibc',
-    title: 'IBC Switzerland Webauftritt',
+    title: 'IBC Switzerland',
     time: 'Sommer 2014',
-    content: 'Ein bis heute kleines aber feines Projekt, welches einst eventuell wieder aufgefasst wird: ' +
-      'In kürzester Zeit wurde spontan eine Internetpräsenz erschaffen.'
+    content: 'In kürzester Zeit wurde spontan ein temporärer Webauftritt für die Übergangszeit erschaffen.'
   },
 
   {
@@ -219,8 +218,8 @@ export const projects: WuzaProject[] = [
     content: 'Der kleine Protagonist wird von Bomben bedroht!'
   },
   {
-    title: 'iOS AppQuest und FlappyBird',
-    time: 'im Jahr 2014',
+    title: 'iOS AppQuest & FlappyBird',
+    time: '2014',
     content: 'Die ersten Schritte in Objective-C und Swift.'
   },
   {
