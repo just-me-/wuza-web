@@ -10,9 +10,8 @@ export class KastanienKuchenComponent {
     '150g Butter',
     '150g Zucker',
     '3 Eier',
-    '560g Marroni-Püree',
-    'Halbe (Bio) Zitrone',
-    '4 EL Grappa oder Kirsch',
+    '600g Marroni-Püree',
+    '4 EL Kirsch',
   ]
 
   images = [
