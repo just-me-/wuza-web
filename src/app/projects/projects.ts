@@ -14,6 +14,8 @@ import {IpaComponent} from './content/ipa/ipa.component'
 import {BuildToolComponent} from './content/build-tool/build-tool.component'
 import {IbcComponent} from './content/ibc/ibc.component'
 import {JsMarioComponent} from './content/js-mario/js-mario.component'
+import {MindstepsComponent} from './content/mindsteps/mindsteps.component'
+import {TaxviewerComponent} from './content/taxviewer/taxviewer.component'
 
 export interface WuzaProjectRoute {
   link?: string
@@ -34,6 +36,19 @@ export const projectRoutes: () => WuzaProjectRoute[] = () => projects
     })) ?? []
 
 export const projects: WuzaProject[] = [
+  {
+    title: 'TaxViewer', time: '2024 bis 2025',
+    template: TaxviewerComponent, link: 'taxviewer',
+    content: 'CAS «Interaction Design»: Entwicklung eines UX-Frameworks für ' +
+      'ECMind – angewendet auf die Neugestaltung des webbasierten TaxViewer.'
+  },
+
+  {
+    title: 'Mindsteps', time: '2023 bis 2024',
+    template: MindstepsComponent, link: 'mindsteps',
+    content: 'Nutzerforschung mit Schüler:innen: Wie Mindsteps ihren Lernprozess unterstützt – und wie ' +
+      'die Plattform gezielt verbessert werden kann. Eine Arbeit aus dem CAS «User Research & Visioning»'
+  },
 
   {
     title: 'Accessibility', time: 'November 2023',
