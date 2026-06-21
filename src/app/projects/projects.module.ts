@@ -23,6 +23,7 @@ import {GithubRibbonModule} from '../common/github-ribbon/github-ribbon.module'
 import {ImageSliderModule} from '../common/image-slider/image-slider.module'
 import {WuzaCommonModule} from '../common/common.module'
 import {MindstepsComponent} from './content/mindsteps/mindsteps.component'
+import {SecguardComponent} from './content/secguard/secguard.component'
 import {TaxviewerComponent} from './content/taxviewer/taxviewer.component'
 
 const standardRoutes: Routes = [
@@ -47,6 +48,7 @@ const standardRoutes: Routes = [
     RockTheRingComponent,
     SaComponent,
     SbbComponent,
+    SecguardComponent,
     TaxviewerComponent,
     TesoAddonsComponent,
     TesoMapComponent,

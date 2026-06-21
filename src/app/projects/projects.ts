@@ -15,6 +15,7 @@ import {BuildToolComponent} from './content/build-tool/build-tool.component'
 import {IbcComponent} from './content/ibc/ibc.component'
 import {JsMarioComponent} from './content/js-mario/js-mario.component'
 import {MindstepsComponent} from './content/mindsteps/mindsteps.component'
+import {SecguardComponent} from './content/secguard/secguard.component'
 import {TaxviewerComponent} from './content/taxviewer/taxviewer.component'
 
 export interface WuzaProjectRoute {
@@ -36,6 +37,12 @@ export const projectRoutes: () => WuzaProjectRoute[] = () => projects
     })) ?? []
 
 export const projects: WuzaProject[] = [
+  {
+    title: 'SecGuard', time: '2025 bis 2026',
+    template: SecguardComponent, link: 'secguard',
+    content: 'Masterarbeit HCID: Nutzerzentrierte Weiterentwicklung eines sicherheitskritischen Systems (PSIM) inklusive Analyse und Konzeption zur Verbesserung von Arbeits- und Entscheidungsprozessen.'
+  },
+
   {
     title: 'TaxViewer', time: '2024 bis 2025',
     template: TaxviewerComponent, link: 'taxviewer',
